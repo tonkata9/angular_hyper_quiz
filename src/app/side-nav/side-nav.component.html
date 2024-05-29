@@ -1,0 +1,63 @@
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+    <section class="section_pages">
+      <div class="div-button"><button class="button" (click)="performaction1()">Home</button></div>
+      <div class="div-button"><button class="button" (click)="navigateTo('quizzes')">Quizzes</button></div>
+      <div class="div-button"><button class="button" (click)="about_home(false)">About us</button></div>
+      <div class="div-button"><button class="button" (click)="navigateTo('log-in')">log-in</button></div>
+      <div class="div-button"> <button class="button" (click)="navigateTo('sign-up')">sign-up</button> </div>
+      <div class="div-button"> <button class="button" (click)="navigateTo('quiz-results')">quiz-results</button></div>
+      <div class="div-button"><button class="button" (click)="navigateTo('personal')">Profile</button> </div>
+    </section>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div *ngIf="reason2; else elseBlock">
+      <div class="container-up">
+        <p><button class="menu-conatiner" mat-button (click)="sidenav.open()">Menu</button></p>
+        <div class="title_one">Hyper <br>Quiz</div>
+        <div class="login-container"><a class="login-text" href="/log-in">login</a></div>
+      </div>
+      <div class="info-game">
+        <div class="title_two">
+          <h6>Here you can play different quizzes with you friends in 3 simple steps!</h6>
+        </div>
+        <div class="steps">
+          <div class="step1">
+            <button class="button_step1">1</button>
+            <p class="text"> Visit the <a href="/quizzes">quizzes</a> section with all of our
+              questions availiable.If you to make a quiz or play with friends you first have to <a
+                href="/sign-up">register</a>.You can sort the quizzes by category to find the right question for your
+              perfect quiz</p>
+          </div>
+          <div class="step2"></div>
+          <div class="step3"> </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #elseBlock>
+      <div>
+        <div class="container-up">
+          <p><button class="menu-conatiner" mat-button (click)="sidenav.open()">Menu</button></p>
+          <div class="title_one">Hyper <br>Quiz</div>
+          <div class="login-container"><a class="login-text" href="/sign-up">Register</a></div>
+        </div>
+        <div class="container-middle">
+          <div class="info">
+            <li class="text-intro">Introduction</li>
+            <p class="text">Welcome to Hyper Quiz, the ultimate destination for a supern modern quiz experience! Dive
+              into a world
+              where knowledge meets innovation, and compete in a cutting-edge trivia adventure like never before. Get
+              ready to challenge your intellect, engage with real-time events, and embrace the future of gaming with
+              Hyper Quiz!</p>
+          </div>
+          <div class="creators">
+
+          </div>
+        </div>
+      </div>
+
+    </ng-template>
+  </mat-sidenav-content>
+</mat-sidenav-container>

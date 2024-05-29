@@ -1,0 +1,20 @@
+.container-up{
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+.container-up .back{
+
+}
+.container-up .title_one{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container-up .create_quiz{
+
+
+}
+.container-up .create_quiz button{
+ 
+}

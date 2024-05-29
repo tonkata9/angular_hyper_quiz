@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&display=swap');
+.container-up{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.menu-container{
+
+}
+.login-text{
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: brown;
+}
+.title_one{
+  display: flex;
+ justify-content: center;
+  font-size: 40px;
+  font-family: "Pacifico";
+}
+.menu-image{
+  width: 20px;
+  height: 20px;
+}.login-container{
+ display: flex;
+ margin-right: 20px;
+ justify-content: end;
+}

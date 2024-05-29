@@ -1,0 +1,45 @@
+.container-up{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+margin-top: 15px;
+}
+.container-up .back{
+  margin-left: 10px;
+}
+.container-up .title{
+  display: flex;
+  justify-content: center;
+}
+.container-up .sign-up{
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+.signup-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

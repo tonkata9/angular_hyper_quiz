@@ -1,0 +1,112 @@
+.container-up{
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container-up .back{
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  gap: 20px;
+}
+.container-up .back .nav-buttons{
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container-up .back .nav-buttons:hover{
+  background-color: #45a049; /* Darker green background */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.container-up .back .nav-buttons:focus{
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
+}
+.container-up .title_one{
+  /* font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ display: flex;
+ justify-content:flex-start;
+ padding-left: 20px; */
+ margin-top: 20px;
+ font-family: 'Roboto', sans-serif; /* Use a modern font */
+  font-size: 36px; /* Increase font size */
+  color: #333; /* Dark gray color for the text */
+  text-transform: uppercase; /* Uppercase letters */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 1.5px; /* Increase space between letters */
+
+  text-align: center; /* Center the title */
+  position: relative; /* Positioning context for the underline */
+}
+.container-up .title_one::after{
+  content: '';
+  display: block;
+  width: 50px; /* Width of the underline */
+  height: 4px; /* Height of the underline */
+  background-color: #4CAF50; /* Green color for the underline */
+  margin: 8px auto 0; /* Center the underline and add spacing */
+  border-radius: 2px; /* Rounded corners for the underline */
+}
+.filter-container{
+  padding-left: 20px;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.question_form{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.filter-container .create .create-button{
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.filter-container .create .span{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.filter-container
+.create-question-form {
+  margin-top: 20px;
+}
+
+.create-question-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.create-question-form input,
+.create-question-form select {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.questions-conatiner .question-conatiner{
+ 
+}
+.question-container{
+  margin-left: 20px;
+}
+.question_form .answer-conatiner{
+  display: flex;
+}

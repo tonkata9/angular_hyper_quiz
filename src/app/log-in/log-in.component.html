@@ -1,0 +1,29 @@
+<div>
+  <div class="container-up">
+    <div class="back">
+      <button (click)="navigateToHome()">Back to home</button>
+    </div>
+    <div class="title">
+
+    </div>
+    <div class="sign-up">
+      <a href="/sign-up">Sign-up</a>
+    </div>
+  </div>
+  <div>
+    <div class="login-container">
+      <h2>Log-in</h2>
+      <form (ngSumbit)="onSubmit()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" [(ngModel)]="userData.username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="userData.username" required>
+        </div>
+      </form>
+      <button>Submit</button>
+    </div>
+  </div>
+</div>
