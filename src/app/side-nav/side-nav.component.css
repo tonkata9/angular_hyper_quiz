@@ -81,7 +81,7 @@ margin-top: 30px;
 .info-game .steps{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
+  gap: 10px;
 }
 .info-game .steps .step1{
   margin-left: 20px;
@@ -96,4 +96,7 @@ margin-top: 30px;
 .info-game .steps .step1 .text{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
+}
+.info-game .steps .step2{
+
 }

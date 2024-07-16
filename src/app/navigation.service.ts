@@ -1,12 +1,19 @@
 import { Injectable, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
 export class NavigationService {
   private router = inject(Router);
-  navigateTo(route: string) {
-    this.router.navigate([`/${route}`]);
+  // constructor(private router: Router) {}
+  // navigateTo(route: string) {
+  //   this.router.navigate([`/${route}`]);
+  // }
+  navigateTo(url: string, extras?: NavigationExtras) {
+    this.router.navigate([url], extras);
   }
-  constructor() {}
+
+  getCurrentNavigation() {
+    return this.router.getCurrentNavigation();
+  }
 }

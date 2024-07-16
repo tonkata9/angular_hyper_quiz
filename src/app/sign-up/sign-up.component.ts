@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { inject } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { BackendURL } from '../../settings.json';
 import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-sign-up',
@@ -23,6 +23,19 @@ export class SignUpComponent {
   };
 
   onSubmit() {
-    console.log('Sign up form submitted with data:', this.userData);
+    fetch(BackendURL + '/register', {
+      method: 'POST',
+      body: JSON.stringify({
+        username: this.userData.username,
+        password1: this.userData.password,
+        password2: this.userData.confirm_password,
+        email: this.userData.email,
+      }),
+      headers: {
+        'Content-type': 'application/json',
+      },
+    })
+      .then((resp) => resp.text())
+      .then((response) => console.log(response));
   }
 }

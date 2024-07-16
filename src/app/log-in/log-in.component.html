@@ -12,18 +12,20 @@
   </div>
   <div>
     <div class="login-container">
-      <h2>Log-in</h2>
-      <form (ngSumbit)="onSubmit()">
+      <h2>Log in</h2>
+      <form (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" [(ngModel)]="userData.username" required>
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" [(ngModel)]="userData.username" required>
+          <label for="username">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
         </div>
+
+        <div class="button-end"><button type="submit">Log-in</button></div>
+
       </form>
-      <button>Submit</button>
     </div>
   </div>
 </div>

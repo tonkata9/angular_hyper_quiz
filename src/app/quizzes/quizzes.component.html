@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <div class="container-up">
     <div class="back"><button (click)="navigateTo('/')">Back to Home</button></div>
     <div class="title_one">
@@ -6,6 +6,55 @@
     </div>
     <div class="create_quiz">
       <button (click)="navigateTo('categories')">Create Quiz</button>
+    </div>
+  </div>
+  <div class="quizzes">
+    <div *ngFor="let question of selectedQuestions">
+      <div class="quiz-conatiner">
+        <div class="answer-conatiner-left">
+          <p>{{question.content}}</p>
+          <p>{{question.category}}</p>
+          <div *ngIf="question.isOneAnswer===true;else elseBlock">
+            <span>The question has only one answer</span><button>View Answer</button>
+          </div>
+          <ng-template #elseBlock>
+            <div *ngFor="let answer of question.answers; let i = index">
+              <span><button>{{ getLabel(i) }}. </button>{{ answer.text }}</span>
+            </div>
+          </ng-template>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+<div>
+  <div class="container-up">
+    <div class="back"><button (click)="navigateTo('/')">Back to Home</button></div>
+    <div class="title_one">
+      <h4>Here are all the quizzes available</h4>
+    </div>
+    <div class="create_quiz">
+      <button (click)="navigateTo('categories')">Create Quiz</button>
+    </div>
+  </div>
+  <div class="quizzes">
+    <div *ngFor="let question of selectedQuestions">
+      <div class="quiz-container">
+        <div class="answer-container-left">
+          <p>{{question.content}}</p>
+          <p>{{question.category}}</p>
+          <div *ngIf="question.isOneAnswer; else elseBlock">
+            <span>The question has only one answer</span><button>View Answer</button>
+          </div>
+          <ng-template #elseBlock>
+            <div *ngFor="let answer of question.answers; let i = index">
+              <span><button>{{ getLabel(i) }}. </button>{{ answer.text }}</span>
+            </div>
+          </ng-template>
+        </div>
+      </div>
     </div>
   </div>
 </div>

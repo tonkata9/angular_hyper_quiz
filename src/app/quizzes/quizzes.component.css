@@ -4,7 +4,8 @@ grid-template-columns: 1fr 1fr 1fr;
 
 }
 .container-up .back{
-
+display: flex;
+justify-content: center;
 }
 .container-up .title_one{
   display: flex;
@@ -12,9 +13,35 @@ grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
 }
 .container-up .create_quiz{
-
+display: flex;
+justify-content: center;
 
 }
 .container-up .create_quiz button{
- 
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container-up .back button{
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s;
 }

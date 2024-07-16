@@ -4,6 +4,7 @@ export interface Question_Multipple_Choice {
   category: Category;
   answers: Answer[];
   isOneAnswer: boolean;
+  selected?: boolean;
 }
 export interface Answer {
   text: string;
